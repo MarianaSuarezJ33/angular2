@@ -1,0 +1,59 @@
+/* Contenedor principal de los productos */
+.productos-container {
+  display: flex; /* Muestra los productos en línea */
+  flex-wrap: wrap; /* Permite que los productos se envuelvan automáticamente cuando no haya suficiente espacio */
+  justify-content: space-between; /* Distribuye el espacio disponible entre las columnas */
+}
+
+/* Tarjeta de producto */
+.producto-card {
+  width: calc(30% - 20px); /* Ajusta el ancho de la tarjeta para que ocupe la mitad del espacio disponible */
+  margin-bottom: 45px; /* Espacio entre las tarjetas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para la tarjeta */
+  border-radius: 8px; /* Borde redondeado para la tarjeta */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga de la tarjeta */
+  transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+/* Efecto de hover */
+.producto-card:hover {
+  transform: translateY(-3px); /* Desplaza ligeramente la tarjeta hacia arriba al hacer hover */
+}
+
+/* Imagen del producto */
+.producto-image {
+  width: 50%; /* Ajusta la anchura de la imagen al 100% */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  border-top-left-radius: 8px; /* Borde redondeado superior izquierdo */
+  border-top-right-radius: 8px; /* Borde redondeado superior derecho */
+}
+
+/* Información del producto */
+.producto-info {
+  padding: 10px; /* Espaciado interno para la información del producto */
+}
+
+/* Título del producto */
+.producto-title {
+  margin: 0 0 10px; /* Margen inferior para separar el título de la descripción */
+  font-size: 18px; /* Tamaño de fuente del título */
+}
+
+/* Descripción del producto */
+.producto-description {
+  margin-bottom: 10px; /* Margen inferior para separar la descripción de los detalles */
+}
+
+/* Detalles del producto */
+.producto-details {
+  display: flex; /* Muestra los detalles del producto en línea */
+  justify-content: space-between; /* Distribuye el espacio disponible entre los detalles */
+}
+
+/* Precio y valoración del producto */
+.producto-price,
+.producto-rating {
+  margin: 0; /* Elimina los márgenes predeterminados */
+  font-size: 14px; /* Tamaño de fuente para el precio y la valoración */
+  color: #d836b0; /* Color de texto para el precio y la valoración */
+}

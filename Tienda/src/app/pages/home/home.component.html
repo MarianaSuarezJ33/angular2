@@ -1,0 +1,35 @@
+<div class="container">
+  <h2>Principales Productos</h2>
+
+  <!-- Contenedor de los productos -->
+  <div class="productos-container">
+    <!-- Iterar sobre los principales productos -->
+    <div class="producto-card" *ngFor="let producto of principalesProductos">
+      <!-- Imagen del producto -->
+      <img
+        [src]="producto.image"
+        alt="{{ producto.title }}"
+        class="producto-image"
+      />
+      <!-- Información del producto -->
+      <div class="producto-info">
+        <!-- Título del producto -->
+        <h3 class="producto-title">{{ producto.title }}</h3>
+        <!-- Descripción del producto -->
+        <p class="producto-description">{{ producto.description }}</p>
+        <!-- Detalles del producto -->
+        <div class="producto-details">
+          <!-- Precio del producto -->
+          <p class="producto-price">Precio: ${{ producto.price }}</p>
+          <!-- Valoración del producto -->
+          <p class="producto-rating">
+            Valoración: {{ producto.rating.rate }} ({{
+              producto.rating.count
+            }}
+            reseñas)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

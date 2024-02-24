@@ -1,0 +1,38 @@
+<!-- Contenedor principal de la lista de productos -->
+<div class="mat-elevation-z2">
+  <!-- Aplica una sombra al contenedor -->
+  <!-- Itera sobre la lista de productos utilizando *ngFor -->
+  <div
+    class="productos-container"
+    *ngFor="let producto of productos$ | async as productos"
+  >
+    <!-- Tarjeta de producto -->
+    <div class="producto-card">
+      <!-- Imagen del producto -->
+      <img
+        [src]="producto.image"
+        alt="{{ producto.title }}"
+        class="producto-image"
+      />
+      <!-- Información del producto -->
+      <div class="producto-info">
+        <!-- Título del producto -->
+        <h3 class="producto-title">{{ producto.title }}</h3>
+        <!-- Descripción del producto -->
+        <p class="producto-description">{{ producto.description }}</p>
+        <!-- Detalles adicionales del producto -->
+        <div class="producto-details">
+          <!-- Precio del producto -->
+          <p class="producto-price">Precio: ${{ producto.price }}</p>
+          <!-- Valoración del producto -->
+          <p class="producto-rating">
+            Valoración: {{ producto.rating.rate }} ({{
+              producto.rating.count
+            }}
+            reseñas)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

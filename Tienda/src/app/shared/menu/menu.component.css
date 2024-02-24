@@ -1,0 +1,43 @@
+/* Estilos personalizados para la barra de herramientas */
+.custom-toolbar {
+  background-color: #2196F3; /* Color de fondo del toolbar */
+  padding: 10px 20px; /* Añadir un poco de espacio alrededor del toolbar */
+}
+
+/* Estilos para el botón de menú */
+.custom-menu-button {
+  color: #fff; /* Color del icono del menú */
+  font-size: 1.5rem; /* Tamaño del icono del menú */
+  margin-right: 20px; /* Añadir un poco de espacio a la derecha del botón del menú */
+}
+
+/* Estilos para el título */
+.custom-title {
+  color: #fff; /* Color del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Hacer el título en negrita */
+}
+
+/* Estilos para el espaciador */
+.custom-spacer {
+  flex: 1; /* Espacio para separar los elementos */
+}
+
+/* Estilos para el botón del carrito de compras */
+.custom-cart-button {
+  color: #fff; /* Color del icono del carrito */
+  font-size: 1.5rem; /* Tamaño del icono del carrito */
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #fff; /* Color de los enlaces */
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+  margin-right: 20px; /* Añadir un poco de espacio a la derecha de los enlaces */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color al hacer hover */
+}
+
+/* Estilos para los enlaces cuando están en hover */
+a:hover {
+  color: #ffeb3b; /* Cambiar color al hacer hover */
+}

@@ -1,0 +1,48 @@
+<!-- Barra de herramientas -->
+<mat-toolbar color="primary">
+  <!-- Barra de herramientas con color primario -->
+  <!-- Botón de menú -->
+  <button mat-icon-button class="custom-menu-button" aria-label="Abrir menú">
+    <mat-icon>menu</mat-icon>
+    <!-- Icono de menú -->
+  </button>
+
+  <!-- Título de la tienda -->
+  <span class="custom-title">Tienda Mary´s</span>
+  <!-- Título personalizado de la tienda -->
+
+  <!-- Separador -->
+  <span class="custom-spacer"></span>
+  <!-- Espacio para separar los elementos -->
+
+  <!-- Enlaces de navegación -->
+  <!-- Enlace a la página de inicio -->
+  <a [routerLink]="['/home']" title="Inicio" mat-button>
+    <mat-icon>home</mat-icon> Inicio
+    <!-- Icono de casa para la página de inicio -->
+  </a>
+
+  <!-- Enlace a la página de productos -->
+  <a [routerLink]="['/productos']" title="Productos" mat-button>
+    <mat-icon>important_devices</mat-icon> Productos
+    <!-- Icono de dispositivos importantes para la página de productos -->
+  </a>
+
+  <!-- Enlace a la página de pago -->
+  <a [routerLink]="['/pago']" title="Pago" mat-button>
+    <mat-icon>payment</mat-icon> Pago
+    <!-- Icono de pago para la página de pago -->
+  </a>
+
+  <!-- Botón del carrito de compras -->
+  <button
+    [routerLink]="['/carrito']"
+    title="Carrito de compras"
+    mat-icon-button
+    class="custom-cart-button"
+    aria-label="Abrir carrito"
+  >
+    <mat-icon>add_shopping_cart</mat-icon>
+    <!-- Icono de carrito de compras -->
+  </button>
+</mat-toolbar>
